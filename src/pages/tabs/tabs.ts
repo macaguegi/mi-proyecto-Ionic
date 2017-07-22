@@ -18,6 +18,7 @@ export class TabsPage {
   tab1Title = " ";
   tab2Title = " ";
   tab3Title = " ";
+  public usiDetails : any;
 
   constructor(public navCtrl: NavController, public translateService: TranslateService) {
     translateService.get(['TAB1_TITLE', 'TAB2_TITLE', 'TAB3_TITLE']).subscribe(values => {
@@ -25,5 +26,7 @@ export class TabsPage {
       this.tab2Title = values['TAB2_TITLE'];
       this.tab3Title = values['TAB3_TITLE'];
     });
+  const datos = JSON.parse(localStorage.getItem('usi'));
+  this.usiDetails =datos.usi;
   }
 }
