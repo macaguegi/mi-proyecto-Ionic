@@ -8,6 +8,12 @@ import { NavController } from 'ionic-angular';
 })
 export class ContentPage {
 
-  constructor(public navCtrl: NavController) { }
+public usiDetails : any;
+  constructor(public navCtrl: NavController) { 
+  	const datos = JSON.parse(localStorage.getItem('usi'));
+  	this.usiDetails = datos.usi;
+  }
+
+ 
 
 }

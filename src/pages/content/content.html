@@ -1,14 +1,19 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Content
+    
+      <img ion-right src="../assets/img/polar.png" class="navbarLogo" />
+      <ion-title>
+      Tú página de Inicio
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
+<h2>Bienvenido {{usiDetails.nombre}}</h2>
+<h3>{{usiDetails.email}}</h3>
   <p>
     This is a perfect starting point for a page with primarily text content. The
     body is padded nicely and ready for prose.
   </p>
+   <button ion-button color="primary" (click)="logout()">Cerrar sesión</button>
 </ion-content>

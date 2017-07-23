@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, ToastController } from 'ionic-angular';
 import { AuthServiceProvider } from "../../providers/auth-service/auth-service";
 import { MainPage } from '../../pages/pages';
+import { MenuPage } from '../../pages/menu/menu';
 import { HttpModule, Http } from '@angular/http';
 //import { User } from '../../providers/user';
 
@@ -45,7 +46,7 @@ export class SignupPage {
     this.variLoca = result;
     console.log(this.variLoca);
     localStorage.setItem('usi', JSON.stringify(this.variLoca) )
-    this.navCtrl.push(MainPage);
+    this.navCtrl.push(MenuPage);
   }, (err) => {
     //Conexion falla mensaje
     console.log("fallo");
