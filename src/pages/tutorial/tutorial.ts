@@ -38,14 +38,9 @@ export class TutorialPage {
             image: 'assets/img/we.png',
           },
           {
-            title: values.TUTORIAL_SLIDE2_TITLE,
-            description: values.TUTORIAL_SLIDE2_DESCRIPTION,
+            title: "¿Cómo empezar?",
+            description: "Crea una cuenta o logueate en el aplicativo web",
             image: 'assets/img/cl.png',
-          },
-          {
-            title: values.TUTORIAL_SLIDE3_TITLE,
-            description: values.TUTORIAL_SLIDE3_DESCRIPTION,
-            image: 'assets/img/ca.png',
           }
         ];
       });
